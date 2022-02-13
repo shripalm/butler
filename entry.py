@@ -2,6 +2,7 @@ from oc import googleIt, searchIt
 import datetime
 from speakerMan import sayTheThing
 from filerenamer import rename
+from ytsubs import ytsubscaller
 
 
 def greet():
@@ -45,6 +46,8 @@ def identifyTask(task):
         return 'farewell'
     elif task == 'rename':
         return 'rename'
+    elif task == 'ytsubs':
+        return 'ytsubscaller'
     else:
         ch = sayTheThing("Would you like to google it?", True)
         if ch == 'yes' or ch == 'y' or ch == True:
