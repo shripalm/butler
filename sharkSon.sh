@@ -1,2 +1,2 @@
-cd /media/shark/PlayGround/sharkSon
+cd /media/shripal/PlayGround/sharkSon
 gnome-terminal -- python3 ./entry.py

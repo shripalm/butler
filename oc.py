@@ -8,5 +8,5 @@ def searchIt(data):
 
 
 def googleIt(data):
-    for i in search(data, tld="co.in", num=10, stop=10, pause=2):
+    for i in search(data, int(input('How many results: '))):
         print(i)
