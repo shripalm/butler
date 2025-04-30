@@ -8,3 +8,8 @@
     - Personal integration if any
 - Scrap for me
 - Project manager
+- Job Finder
+   - Telegram
+   - Instagram
+   - Discard
+   - Linkedin
