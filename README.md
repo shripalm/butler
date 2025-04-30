@@ -1,0 +1,10 @@
+- Communicate for me
+    - Email
+    - Call
+    - Social media integration [NON - MVP]
+- Post for me
+    - Tweet
+    - Insta
+    - Personal integration if any
+- Scrap for me
+- Project manager
