@@ -199,3 +199,6 @@ typing-inspection==0.4.1
 typing_extensions==4.14.0
 urllib3==2.5.0
 youtube-transcript-api==1.1.0
+gtts
+moviepy
+pillow

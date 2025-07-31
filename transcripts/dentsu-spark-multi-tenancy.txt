@@ -1,0 +1,998 @@
+
+
+
+Shweta Mishra
+
+ started transcription
+------
+Meha Sakhariya 0 minutes 4 seconds
+But what we are planning to do is we'll have a common header on the top where we can quickly just switch between different modules. If user has access to one of them, they will just see your current module. If they have access to multiple modules, they can quickly switch between those modules too.
+------
+Meha Sakhariya 0 minutes 22 seconds
+So over here you'll see all the marketing effectiveness module features which we were planning to incorporate in the new design. We'll have product or sub brand past performances and based on product versus competitor brand, we'll show all of those information on the inside dashboard.
+------
+Meha Sakhariya 0 minutes 42 seconds
+Something which we were looking at was also chat based AI insight. We'll show you the wireframe for that. So on this chat you can quickly post a question or ask for suggestions and the AI will help you answer it.
+------
+Meha Sakhariya 0 minutes 58 seconds
+Then we'll have all the list of scenario in the form of cards. AI recommendations would be shown on dashboard and on various different pages so that user can make better decisions. We'll have a space for uploading and storing data file. This is mainly for the Densu team, not for the client side.
+------
+Meha Sakhariya 1 minute 18 seconds
+So they can manage the user. They can upload the marketing data, the past performances and all of that. One more thing which we were planning to do was giving terminology. So if the user wants to change the term, if they want to change channel to driver, they can replace the word and they will.
+------
+Meha Sakhariya 1 minute 38 seconds
+Reflected it on all the reports. So this we need a confirmation. Raj, if you can help us define this. If you want to just give it for the client or it should be on the Denzo team only the client will provide the details to the Denzo team and they will update it as per that.
+------
+Raj Kiran 2 minutes
+Yeah, I think we discussed it. I think that's how it should be. I don't think we are allowing the clients to make any changes as such.
+------
+Meha Sakhariya 2 minutes 8 seconds
+OK.
+------
+Meha Sakhariya 2 minutes 12 seconds
+Got it. Then we'll have actual ROI of marketing channels from Meta, Google ads, YouTube, all of that information shown on the dashboard. This will also depend on if we can have the integration done with the Meta team.
+------
+Meha Sakhariya 2 minutes 29 seconds
+If that's possible, then this feature would also be there. Then we'll have expected target settings from different channels. You can add minimum maximum value and this will be AI assisted too. Then we have forecasted ROI and impact of marketing channel compare scenarios and.
+------
+Meha Sakhariya 2 minutes 49 seconds
+Plan. So based on that you'll get a summary by AI and you'll see the recommendations of which scenario works well for the campaign. You can go forward with that. So these were the main features for marking marketing effectiveness.
+------
+Meha Sakhariya 3 minutes 7 seconds
+Are there any questions regarding this?
+------
+Shweta Mishra 3 minutes 13 seconds
+So since this is going to be a single tool which will have all three of it. So suppose if a if a client want wants to use just say influencer marketing. So how are we you know addressing that are we going to disable rest of the features for him?
+------
+Shweta Mishra 3 minutes 33 seconds
+Or or. What is the thought process there?
+------
+Navya Bhardwaj 3 minutes 33 seconds
+So yeah, Shweta for that we have a modular approach. I think those questions will be answered one once we just dive into the UX. So let's just discuss the features and the IA 1st and then we can walk you through the wireframes.
+------
+Navya Bhardwaj 3 minutes 49 seconds
+For a better understanding around those things, yeah.
+------
+Shweta Mishra 3 minutes 50 seconds
+Yeah.
+------
+Shweta Mishra 3 minutes 52 seconds
+Sure. And which is the module for the admin setup? You know user onboarding and you know there would be some static or the you know client specific variables which has to be entered which is that module here.
+------
+Navya Bhardwaj 4 minutes 7 seconds
+Yeah. So for yeah, so for that we are thinking to add a user management page. So we got to know this from Akshay that right now it's done at back end. So we will have a front end for that created that will be just be for the Densus Park team.
+------
+Shweta Mishra 4 minutes 11 seconds
+Yes.
+------
+Shweta Mishra 4 minutes 23 seconds
+OK.
+------
+Meha Sakhariya 4 minutes 29 seconds
+OK. Moving forward, for creative effectiveness, we'll have bulk upload creatives or report downloading feature that could be in a PDF or a PPT format. Then preview of the creatives you've uploaded the photos, video, sound, you can preview it on the portal and we'll give suggestions to enhance the top of.
+------
+Meha Sakhariya 4 minutes 49 seconds
+Performing creatives also, and the report would be also there. So these are the five features we were looking for creative effectiveness mainly.
+------
+Meha Sakhariya 5 minutes 3 seconds
+Then we have influencer marketing, where we'll have guided set up. This will be applicable for all the three modules for the first time user. It's a little confusing for the user how to go about. So we'll just give few steps so that they can.
+------
+Meha Sakhariya 5 minutes 19 seconds
+Use the portal seamlessly. Then we'll have database of the finished campaigns with AI recommendations, influencer database and search advanced philtres based on target audience, age, gender, location, reach. We'll have categories based on influencers, so.
+------
+Meha Sakhariya 5 minutes 38 seconds
+Based on industry occasion brand top gainers, all of these categories we were looking at curated list and bundle of influencers based on your campaign type and product, we'll suggest influencers too. So the features which are marked in black dot also depends on.
+------
+Meha Sakhariya 5 minutes 58 seconds
+If we can integrate it with meta and have the laundry list of all the influencers. If that is not there, then these features will also change again.
+------
+Meha Sakhariya 6 minutes 10 seconds
+Then we have influencer analytics, where we'll show the infographics based on past campaign performance tasks, target demographic, audience interest, growth rate. They can preview the posts and creatives of all the influencer they are browsing for. They can go to their.
+------
+Meha Sakhariya 6 minutes 29 seconds
+Social accounts also, if they have worked on Instagram and YouTube, we'll provide them links and they can click on that to directly check the page.
+------
+Meha Sakhariya 6 minutes 40 seconds
+Tracking brand mentions and keywords again depends on if we can integrate it with meta. We'll give AI recommendations for influencer specific campaign. If the influencer fits well for the campaign or not. Similar to influencer recommendations, and we'll give influencer.
+------
+Meha Sakhariya 6 minutes 58 seconds
+The rating also.
+------
+Meha Sakhariya 7 minutes 1 second
+So these were the features we were looking for influencer marketing.
+------
+Meha Sakhariya 7 minutes 9 seconds
+We can dive into the information architecture for marketing strategy now, so we log in through Okta, we'll verify account and enter the marketing dashboard. On the dashboard, you'll see the guided set up. The past performances based on marketing spend or revenue average.
+------
+Meha Sakhariya 7 minutes 26 seconds
+Engagement rate and then you will also see the spark AI inside the chat bot which we were talking about. AI recommendation based on past performances key performance insight like overview, competition comparison, brand comparison, driver impact and budget planner.
+------
+Meha Sakhariya 7 minutes 45 seconds
+So all of this would be there on the dashboard. We will also have get inspired so you can see past campaigns by other brand with a little summary and content preview of it. And then we'll have get in touch if you want to explore the other two modules creative and the influencer, you can get in touch with the back end team.
+------
+Meha Sakhariya 8 minutes 5 seconds
+They can help you set up that.
+------
+Meha Sakhariya 8 minutes 9 seconds
+Then we have campaign so you can add a new campaign. You list all the information related to the campaign. You can create scenario based on target budget and then you can stimulate the report and you will see all the information over there.
+------
+Meha Sakhariya 8 minutes 24 seconds
+Then we have list of all the campaigns you've already created. If you click on any of the campaigns, you will see a summary based on the total forecasted ROI, allocated budget achieved, ROI and you can upload ongoing campaign data or delete the campaign.
+------
+Meha Sakhariya 8 minutes 43 seconds
+You will see the performance of the campaign also the driver impact, driver performance and you can generate and download report from here too.
+------
+Meha Sakhariya 8 minutes 53 seconds
+Then we have all the scenario cards over here. You have created multiple scenarios scenarios based on target and budget. You can preview that you can compare some scenarios. Also you can philtre the scenario list search and you'll see the simulation report on that.
+------
+Meha Sakhariya 9 minutes 14 seconds
+Then we have something called user management for the Denso team, so they can invite people. They can invite more team members. They'll see a list of username emails. They have the option to change the configuration functionality also. So if some user does not have access to create.
+------
+Meha Sakhariya 9 minutes 33 seconds
+Module. They can uncheck the creative section from that and that user will not see the creative fit. They can upload the client data, they'll see all the list of uploaded files and they can remove user from here.
+------
+Meha Sakhariya 9 minutes 54 seconds
+So this was marketing strategy. Any questions on this?
+------
+Navya Bhardwaj 10 minutes 10 seconds
+Yeah.
+------
+Meha Sakhariya 10 minutes 11 seconds
+Something similar for creative. You log in through Octa, verify account, enter the creative, you will see a dashboard with a guided setup. How to go ahead with that. You will see past performance chart. You will see some matrix AI inside spark recommendations based on AI and.
+------
+Meha Sakhariya 10 minutes 30 seconds
+Creative performance. The best performing, creative, creative comparison and again we have get in touch if you want to take the other two modules you can get in touch with the back end team. Then we have upload creative section where you can upload all the creatives.
+------
+Meha Sakhariya 10 minutes 47 seconds
+Then you can upload the Excel file with the data related to creatives. So campaign performance data like reach engagement rate against each creative. You will have to upload the information and based this on that you will see the analyse creative report where we'll show the top.
+------
+Meha Sakhariya 11 minutes 6 seconds
+10 creatives detailed reasoning related to that Creative Preview inside summary how on how to improve those creatives? Then you'll see the illustrative ad and its components logo placement factor driving, high impact aspect ratio. So all of these are the reports, report components.
+------
+Meha Sakhariya 11 minutes 26 seconds
+Which we get for the creators you've already uploaded.
+------
+Meha Sakhariya 11 minutes 32 seconds
+Then again, we have the user management bit which is same to the marketing strategy.
+------
+Navya Bhardwaj 11 minutes 53 seconds
+Me how your screen has frozen for us.
+------
+Meha Sakhariya 11 minutes 58 seconds
+Can you see my screen now?
+------
+Navya Bhardwaj 12 minutes 2 seconds
+Yeah.
+------
+Meha Sakhariya 12 minutes 4 seconds
+OK, so for the influencer login process will be same, we'll have a dashboard similar to other modules where we'll have the guided set up the past performances where we'll show a few charts on influencer performances. We'll give recommended influencers also.
+------
+Meha Sakhariya 12 minutes 22 seconds
+And then we'll have get in touch section when we go into the influencer bit, we can search, we can philtre by channel location, gender, followers, score, age, reach. We'll have certain philtre by category also and top rated influencer.
+------
+Meha Sakhariya 12 minutes 40 seconds
+So if you go to influencer card, you'll see all the name of the influencer, the category or industry they are of. They are associated with and the rating the engagement rate campaigns delivered, sales generated and their social links.
+------
+Meha Sakhariya 12 minutes 56 seconds
+Once you click on any of those influencers, you will get a more detailed information basis on gender, age, language, location. They are on matrix influencer budget, revenue, generated engagement rate, campaigns delivered.
+------
+Meha Sakhariya 13 minutes 12 seconds
+Then we'll give a AI personalised for you where we'll show that if this influencer is the optimal match and topics they've talked about, their performances, sale performance, engagement rate by platform, these are all the different kind of charts we are showing basis on their performance.
+------
+Meha Sakhariya 13 minutes 30 seconds
+We'll show content where we'll show content by matrix content posted review of campaigns they've created, and then we have the campaign list, which the influencers have already completed or it's ongoing.
+------
+Meha Sakhariya 13 minutes 47 seconds
+You can also save a influencer and that you can see in the save and influencer navigation bar, and there you'll see all the details of the influencer. Then you have campaigns. You can see different campaigns over here, and all the influencers associated with those campaigns.
+------
+Meha Sakhariya 14 minutes 5 seconds
+And their performance and the charts and matrix related to that. And then again we have the user management bit which is for the denser fork.
+------
+Meha Sakhariya 14 minutes 21 seconds
+Any questions so far?
+------
+Navya Bhardwaj 14 minutes 32 seconds
+All right, we're taking that as a no and we can just quickly start going through the wireframes now. So as we discussed, we have created 3 dashboards for marketing, creatives, influencers each.
+------
+Meha Sakhariya 14 minutes 33 seconds
+OK.
+------
+Navya Bhardwaj 14 minutes 48 seconds
+So this is what we were. I think Neha was trying to reflect on when she said that we have tabs on top from where the client can switch from 1 module to another. So for example if there's a case that the client has only enrolled for marketing strategy and creatives.
+------
+Navya Bhardwaj 15 minutes 5 seconds
+Marketing is what they'll see as a default, but they could switch to creatives or influencers and whatever. And user management is mainly for the Densus Park team, so this will be hidden for the client, but you all will see this so you can click on this and then you'll have another journey altogether for that.
+------
+Navya Bhardwaj 15 minutes 22 seconds
+Now for each module, the left navigation changes. Marketing strategy has dashboard and campaigns, but it might change for creatives and influencers. This is what you are seeing is the marketing strategy dashboard on the right top we have the spark AI insights button. Clicking on this a drawer opens from the right side.
+------
+Navya Bhardwaj 15 minutes 42 seconds
+We have the screen for that. We'll show that later. We have date range philtres and export option. So the exporting is available on each page and it it exports the complete page as a image, PNG or a PDF.
+------
+Navya Bhardwaj 15 minutes 58 seconds
+We have some metrics site on the top which will show some numbers coming in. Then we have the setup tailored setup guide for the users to understand which step they are on and what is next that they can do on the very dashboard we have given AI driven recommendations. So you were planning this to be an interaction where it goes like a scroll.
+------
+Navya Bhardwaj 16 minutes 17 seconds
+The next card comes up in this place. The bigger card comes up here and it keeps going on in a loop like this. Moving on, we have key performance insights. This is basically all the graphs that were present on marketing strategy page, which were category overview then competition comparison.
+------
+Navya Bhardwaj 16 minutes 37 seconds
+Value and volume matrix. All of those have been represented in this way, where we'll have the table or the graphs in this particular space and right next to it, we'll have the summary of the areas that need to be improved or the recommendations for enhancement.
+------
+Navya Bhardwaj 16 minutes 54 seconds
+So the user could scroll, navigate through the arrows to switch from 1 tab to another, or they could directly click on the next tab and they'll see the image for the next one. It could be a graph, it could be a table. Now the idea for this particular section is that we'll provide.
+------
+Navya Bhardwaj 17 minutes 11 seconds
+A handbar tool here which can from which you could hold and drag. So if if there's a graph in half of the space here they could hold and drag towards the right to CD another graph. There's a full width view that we are giving in. So the card in that case stretches till the very end and this is this will be the view.
+------
+Navya Bhardwaj 17 minutes 31 seconds
+Go for full widths that the user is gonna see and on. However we are giving some information here exporting on this. This is the exporting for this particular section. This is BS PDF because it'll it's gonna export every tab that's present the data of every tab.
+------
+Navya Bhardwaj 17 minutes 48 seconds
+So this is the key performance insight section. Moving on, we have the get inspired section where again we can have some images or videos coming in here with the engage engagement rate percentage likes, shares, comments, navigational arrows for the user to click and go through other images related to that particular brand.
+------
+Navya Bhardwaj 18 minutes 8 seconds
+Then we have a nudge over here just to like a summary based on your past performances, so they could directly click on Spark. Yeah. Insights and the same insights drawer opens up with the data related to the past performance campaigns.
+------
+Navya Bhardwaj 18 minutes 23 seconds
+And this is the get in touch section that we spoke about.
+------
+Navya Bhardwaj 18 minutes 28 seconds
+So if in case a user is only enrolled for marketing strategy, they get a nudge over here that this is what you're missing out on, and they could just click on get in touch and reach out to the team directly.
+------
+Navya Bhardwaj 18 minutes 40 seconds
+And he yeah.
+------
+Raj Kiran 18 minutes 40 seconds
+Now there's just one question, sorry, this is this the one we discussed, which are all three are separate and not integrated.
+------
+Navya Bhardwaj 18 minutes 47 seconds
+Yeah, yeah, yes, this is that one only. So each.
+------
+Raj Kiran 18 minutes 49 seconds
+But.
+------
+Navya Bhardwaj 18 minutes 53 seconds
+Each tab is gonna go on to a different URL, but the look and feel is remaining the same.
+------
+Raj Kiran 18 minutes 53 seconds
+Understood the.
+------
+Raj Kiran 18 minutes 59 seconds
+Understood. Because in this part you will not have creatives, we don't get the data for. For the creatives, like you said, you put in the get inspired section, right, which will have the.
+------
+Navya Bhardwaj 19 minutes 10 seconds
+Best performing campaigns for your reviews so this is the these are the campaigns that are, you know, just to inspire them. These are the ones that we have worked on. These are based on their past performance. So this is that section.
+------
+Raj Kiran 19 minutes 11 seconds
+Umm.
+------
+Raj Kiran 19 minutes 25 seconds
+See, I mean we can show them the campaign details, but.
+------
+Navya Bhardwaj 19 minutes 30 seconds
+Mm-hmm.
+------
+Raj Kiran 19 minutes 33 seconds
+OK.
+------
+Raj Kiran 19 minutes 37 seconds
+OK. I mean, because we are not again this is the this section will not tell them campaign effectiveness, right? It is you can just.
+------
+Navya Bhardwaj 19 minutes 48 seconds
+Play song.
+------
+Navya Bhardwaj 19 minutes 49 seconds
+So this is main majorly. So for example if it if the brand is Lenovo we're just giving them their competitors like these were the best performing performing campaigns that we have studied. So it could be some other brand, it could be Apple or some other brands campaigns coming in here.
+------
+Raj Kiran 19 minutes 53 seconds
+Campaign analysis.
+------
+Raj Kiran 19 minutes 57 seconds
+Huh.
+------
+Navya Bhardwaj 20 minutes 9 seconds
+So this is just to inspire them, yeah.
+------
+Raj Kiran 20 minutes 10 seconds
+OK and.
+------
+Raj Kiran 20 minutes 13 seconds
+Got it, got it. But I don't think we can say it's best performing because we don't if it performed well for them or not.
+------
+Navya Bhardwaj 20 minutes 19 seconds
+OK. So yeah, maybe we could work on changing the text.
+------
+Raj Kiran 20 minutes 25 seconds
+Yeah, we can just say some some key competition campaigns or something like that, just for them to know because when you say best performing in terms of what becomes a question.
+------
+Navya Bhardwaj 20 minutes 26 seconds
+Yeah.
+------
+Raj Prasad 20 minutes 26 seconds
+No.
+------
+Navya Bhardwaj 20 minutes 37 seconds
+Hmm.
+------
+Navya Bhardwaj 20 minutes 40 seconds
+OK, makes sense.
+------
+Raj Kiran 20 minutes 40 seconds
+Best performing because it it went viral or did it give them more sales? Did it drive more? I don't know installs. What is it? We don't know so.
+------
+Akshay Kumar 20 minutes 50 seconds
+Raj rather, rather call calling it some key competitor. Maybe campaign. Maybe we can put some sort of general categorization for this because.
+------
+Raj Kiran 21 minutes 3 seconds
+Yeah.
+------
+Akshay Kumar 21 minutes 5 seconds
+It it is not that I will be putting only the laptop category sort of campaigns over there I can put for maybe FM GG client or maybe for let's say another electronic client so.
+------
+Raj Kiran 21 minutes 11 seconds
+Yeah.
+------
+Raj Kiran 21 minutes 20 seconds
+Why will I do that?
+------
+Akshay Kumar 21 minutes 20 seconds
+Yeah.
+------
+Akshay Kumar 21 minutes 22 seconds
+I mean.
+------
+Akshay Kumar 21 minutes 25 seconds
+Yes.
+------
+Akshay Kumar 21 minutes 27 seconds
+Is it because this this is to get inspired section wherein I mean they can they can just sort of look have a look and feel of how other brands are doing wherein they are, what are the different sort of stuff they are trying to do that and that is the point of this section. If I'm not wrong.
+------
+Raj Kiran 21 minutes 36 seconds
+Yeah.
+------
+Raj Kiran 21 minutes 47 seconds
+Understood. Where will you get the data like that for for others?
+------
+Akshay Kumar 21 minutes 53 seconds
+OK.
+------
+Shweta Mishra 21 minutes 54 seconds
+Yeah. So that was my question also also, you know what would be the source of this data? How are we going to get that?
+------
+Raj Kiran 21 minutes 54 seconds
+I am.
+------
+Akshay Kumar 21 minutes 56 seconds
+Hmm.
+------
+Raj Kiran 21 minutes 59 seconds
+Yeah, see, I I completely. Yeah, I completely get putting something inspirational and all of that end of the day, where will we get the data from? This becomes a section for which we'll have to scramble to get some data all the time, right?
+------
+Raj Kiran 22 minutes 17 seconds
+Unless it is some campaigns executed by us, then so. And we have some sort of a feed that keeps telling them these are the campaigns that we have been doing and which have been successful. That may be a thing, but it's fine. We can, we can keep it, but we'll have to think through.
+------
+Raj Kiran 22 minutes 33 seconds
+How we would do it. But Naved, just to make sure this also is modular, right? I can not have this if if required OK then it's fine.
+------
+Navya Bhardwaj 22 minutes 39 seconds
+Yeah, yeah, yeah. We don't have any clicks over here. We just have this park. Yeah. Insights. Bit related to the images that we are showing. So they could learn more about it by clicking over there. Otherwise this is present on mostly each screen. But this is again a modular approach.
+------
+Akshay Kumar 22 minutes 57 seconds
+Maybe maybe what could be helpful over here is some of the then Sue highlights that we usually share internally, maybe in the form of reports or something.
+------
+Raj Prasad 23 minutes 8 seconds
+That won't be relevant.
+------
+Akshay Kumar 23 minutes 12 seconds
+Yeah.
+------
+Raj Prasad 23 minutes 12 seconds
+Considering a user, if Lenovo comes in first of all, suppose we have multiple brands supporting it. Suppose Lenovo Dell, we have customers. Is it legally approved by Dell to promote their data on Lenovo site?
+------
+Raj Prasad 23 minutes 35 seconds
+So there will be a legal aspect also involved, because we are going to promote others data in some other scheme considering the multi tenant approach. So thought of advertisement we can pull it here that we are serving these customers.
+------
+Raj Prasad 23 minutes 52 seconds
+That gives a different feeling like, OK, this is also one of the customer consuming the product. But if we give detailing about their marketing use case, so we need to think about those prospect as well.
+------
+Navya Bhardwaj 24 minutes 6 seconds
+OK, So what if we have this section just to, you know, show the work that Densu has done with some other clients. So it could be just reflecting the campaigns that Densu has worked in collaboration with some other clients. Will that make sense?
+------
+Raj Prasad 24 minutes 20 seconds
+Sort of information. OK. Yeah, that makes sense.
+------
+Akshay Kumar 24 minutes 24 seconds
+But even for those campaigns, even for the yeah, we need to take some sort of permission.
+------
+Raj Kiran 24 minutes 25 seconds
+I mean, even for that. Yeah, we'll we'll have to get permission.
+------
+Raj Kiran 24 minutes 31 seconds
+Yeah. OK. Again, as I said, right.
+------
+Navya Bhardwaj 24 minutes 32 seconds
+OK.
+------
+Shripal Mehta 24 minutes 33 seconds
+I think so. We can go with internal tool only like for that like for internal.
+------
+Shripal Mehta 24 minutes 41 seconds
+Internal teams. They can see this feature, not the client.
+------
+Raj Kiran 24 minutes 51 seconds
+It's fine. See, we can think about this. We can sort of have this section, but I would say we'll have to think, think it through in terms of where will will we get the data from for this. So this let me figure this out for now. I would say this is a good to have not a must have.
+------
+Raj Kiran 25 minutes 8 seconds
+OK, especially in this section.
+------
+Navya Bhardwaj 25 minutes 9 seconds
+OK.
+------
+Navya Bhardwaj 25 minutes 13 seconds
+OK. Makes sense. And also just to clarify, so the content that we have added here, that's all Demi dummy content as of now and that'll be changing once we like you. You guys can think think over it like what would be the key performance insights if you would want to change that or something, this is just dummy content.
+------
+Navya Bhardwaj 25 minutes 33 seconds
+Ten that we have added for now.
+------
+Raj Kiran 25 minutes 35 seconds
+Yeah.
+------
+Navya Bhardwaj 25 minutes 37 seconds
+Alright, so moving on to creatives, this is the creative dashboard that we have now in the left navigation we have dashboard, upload creatives and analyse report.
+------
+Navya Bhardwaj 25 minutes 50 seconds
+Exporting is again the same. We have spark. Yeah. Insights. We have some metrics, but then they are creative based now on this screen setup guide based on creatives. Again the same section AI driven recommendations.
+------
+Navya Bhardwaj 26 minutes 4 seconds
+We have creatives performance, so again we have given a best create performing creatives here with engagement rate like share and comments and then creatives comparison. So based on the brand type engagement rate and actual ROI, we've just given a small comparison here and the get in touch section with marketing.
+------
+Navya Bhardwaj 26 minutes 23 seconds
+Strategy and influencers.
+------
+Navya Bhardwaj 26 minutes 30 seconds
+Any questions or feedback here for creatives?
+------
+Raj Kiran 26 minutes 42 seconds
+Actual ROI, we won't be able to speak about the ROI for individual creatives. We can go up to the level of engagement rates and which could, I mean we can talk about, let's say the top 10.
+------
+Navya Bhardwaj 26 minutes 56 seconds
+Mm-hmm.
+------
+Raj Kiran 27 minutes 1 second
+Creatives are, let's say, bottom 10 creatives and so on. But I would not include the ROI column here. That is not part of this study.
+------
+Navya Bhardwaj 27 minutes 11 seconds
+OK.
+------
+Raj Kiran 27 minutes 13 seconds
+OK, think other than that it should be OK.
+------
+Navya Bhardwaj 27 minutes 20 seconds
+Got it.
+------
+Navya Bhardwaj 27 minutes 23 seconds
+Cool. Then moving forward, we have the influencers dashboard again the left navigation, we have influencers, saved influencers, campaigns and content.
+------
+Navya Bhardwaj 27 minutes 34 seconds
+Now if we dive into it, we have some metrics on the top which are total revenue, generated campaigns, total influencers, average engagement rate, tailored setup guide. Again we have AI driven recommendations right on the top.
+------
+Raj Kiran 27 minutes 40 seconds
+Yeah.
+------
+Navya Bhardwaj 27 minutes 48 seconds
+We have ROI by channel like influencers, performance and top performing influencers where again we have given actual ROI. So will that be possible here?
+------
+Raj Kiran 27 minutes 49 seconds
+OK.
+------
+Raj Kiran 28 minutes 4 seconds
+Here actual ROI should be possible yes if if we are getting their sales data it should be possible. Yeah. I assume that it is there. Yeah, it's fine.
+------
+Navya Bhardwaj 28 minutes 10 seconds
+OK.
+------
+Akshay Kumar 28 minutes 12 seconds
+Things for example.
+------
+Navya Bhardwaj 28 minutes 19 seconds
+OK. And then we have engagement rates trends graph coming in, moving on, we have contributions which we've mostly tried to retain the way it was moving on. We have recommended influencers for you. So we are gonna give them the images of the.
+------
+Navya Bhardwaj 28 minutes 39 seconds
+The like the campaigns or the posts shared by them some here and there, navigational arrows for that the category they are working in. So it could be technology, fitness, engagement rate like shares and comments.
+------
+Navya Bhardwaj 28 minutes 53 seconds
+Again, we have given AI insight for the recommended influencers so and the get in touch section for marketing and creatives.
+------
+Navya Bhardwaj 29 minutes 3 seconds
+This is how the influencer page has turned out to be.
+------
+Navya Bhardwaj 29 minutes 9 seconds
+Moving on, I'll just share how the AI inside bot is good like the field is gonna open up. So once you click on the button, there's a draw that's gonna slide from the right, which will have some prompts coming in. So either the client or the user could directly click.
+------
+Navya Bhardwaj 29 minutes 28 seconds
+On the prompts and get the data regarding that. Or they could like it's more like talk or talk to your data. Kind of a feature that we're thinking of so they could type in and send and they'd get the result accordingly.
+------
+Navya Bhardwaj 29 minutes 49 seconds
+In this case, where we have separate URLs for each, this will again be specific to the module we are on. So for example, if the client is on influencers, the data they they can only search for data related to influencers here.
+------
+Raj Kiran 30 minutes 9 seconds
+OK.
+------
+Navya Bhardwaj 30 minutes 12 seconds
+Right. So that's it for the wireframes, the dashboard wireframes for now. If you have any questions or any feedback, just let us know so that we can incorporate that.
+------
+Navya Bhardwaj 30 minutes 26 seconds
+These points we've noted, the ones we discussed right now, so.
+------
+Raj Kiran 30 minutes 32 seconds
+Yeah.
+------
+Akshay Kumar 30 minutes 38 seconds
+That's in the influencer bit, where we are showing recommended influencer for you are we sort of. I mean we we are basically showing them the recommended influencer on the basis of the past and not this is not future forward, right?
+------
+Raj Kiran 30 minutes 45 seconds
+None.
+------
+Raj Kiran 30 minutes 58 seconds
+It it is future forward for influences that you have used. If it's brand new influencer that is a slightly different this thing because like I said right for that you would need the feed of all.
+------
+Akshay Kumar 31 minutes 4 seconds
+No.
+------
+Akshay Kumar 31 minutes 8 seconds
+Hey.
+------
+Raj Kiran 31 minutes 12 seconds
+In trans, I mean, you'll essentially need a feed from Instagram of all influencers so that so that you can, you know, if somebody types in saying I don't know whatever food or electronics then you'll need a list of everybody who's an influencer from that industry.
+------
+Akshay Kumar 31 minutes 12 seconds
+Right.
+------
+Akshay Kumar 31 minutes 24 seconds
+OK.
+------
+Raj Kiran 31 minutes 29 seconds
+Wait for that access. We do not have. So this is from the data set that we have.
+------
+Akshay Kumar 31 minutes 29 seconds
+So so.
+------
+Akshay Kumar 31 minutes 33 seconds
+Yeah, in in that case, should we call it recommend influencer for you based on past performance? Or should we keep it like? Yeah. Yeah, very small.
+------
+Raj Kiran 31 minutes 41 seconds
+Yeah, those are smaller things. That's fine. Yeah. Yeah.
+------
+Raj Kiran 31 minutes 46 seconds
+That's OK, But a section is important because that is what they will be most interested in.
+------
+Raj Kiran 31 minutes 58 seconds
+Any other thoughts? Omkar. Rajesh, huh.
+------
+Omkar Bargaje 32 minutes 1 second
+Raj, I have one question. What if a client is our means first time using our tool and have not run any campaign, then what data will be here or what component will be here?
+------
+Raj Kiran 32 minutes 4 seconds
+Yeah.
+------
+Raj Kiran 32 minutes 11 seconds
+Yeah.
+------
+Omkar Bargaje 32 minutes 18 seconds
+Yeah.
+------
+Raj Kiran 32 minutes 19 seconds
+No, they're given access if they decide no. Yeah. Sorry, navya. Go on. Sorry.
+------
+Navya Bhardwaj 32 minutes 20 seconds
+So you don't.
+------
+Navya Bhardwaj 32 minutes 24 seconds
+Yeah. So even if it's a first time client coming on the portal, they'll still share the past performance data with the team, right?
+------
+Navya Bhardwaj 32 minutes 37 seconds
+And that data is gonna reflect up here.
+------
+Raj Kiran 32 minutes 37 seconds
+Yeah, that's the point.
+------
+Raj Kiran 32 minutes 41 seconds
+So Omkar, they'll get access once they have shared data. It's not, this is not one of those. Oh, I will log in and see what's on there. It's not. It's not like that even today. If a person hadn't taken spark as part of the deal, the spark tool.
+------
+Omkar Bargaje 32 minutes 51 seconds
+OK.
+------
+Raj Kiran 32 minutes 59 seconds
+They can't access it, right? The reason they're given access is we have their data. We have built the models, we have the results. That is what is being shown on the tool that doesn't change.
+------
+Omkar Bargaje 33 minutes 1 second
+OK, OK.
+------
+Omkar Bargaje 33 minutes 9 seconds
+Oh.
+------
+Omkar Bargaje 33 minutes 11 seconds
+OK. And what's the difference here between influencers and saved influencers?
+------
+Navya Bhardwaj 33 minutes 19 seconds
+Play song.
+------
+Navya Bhardwaj 33 minutes 19 seconds
+So influencers will just be the lift list of all the influencers, so this is still I think, Raj, this is open from your end to finalise if we are getting it linked with meta. So if that's the case, it'll just be the listed influencers and saved influencers. So we're giving them a saving feature so they could click on.
+------
+Navya Bhardwaj 33 minutes 40 seconds
+Bookmark kind of an icon and save the influencers they would like to work with. So that's the list that's gonna reflect here.
+------
+Raj Kiran 33 minutes 47 seconds
+Yeah, got it so far. Now we are honestly that link with meta is going to be tricky. So again, I would keep this as a what do we call? It's good to have, but.
+------
+Navya Bhardwaj 33 minutes 53 seconds
+Mm-hmm.
+------
+Navya Bhardwaj 33 minutes 58 seconds
+Nokia.
+------
+Raj Kiran 34 minutes 2 seconds
+I don't think we will get this immediately.
+------
+Meha Sakhariya 34 minutes 7 seconds
+One more question, how many influencers we'll have in on the list if you're not linking it with meta?
+------
+Raj Kiran 34 minutes 15 seconds
+That depends on the client. For example, for Lenovo we had about 100 influencers.
+------
+Raj Kiran 34 minutes 23 seconds
+So I don't think I don't think companies normally would do more than let's say, hundred 150, so.
+------
+Meha Sakhariya 34 minutes 23 seconds
+OK.
+------
+Meha Sakhariya 34 minutes 25 seconds
+Yeah.
+------
+Navya Bhardwaj 34 minutes 26 seconds
+Got it.
+------
+Meha Sakhariya 34 minutes 35 seconds
+OK, got it.
+------
+Navya Bhardwaj 34 minutes 36 seconds
+So then in that case also the journey still remains the same. So influencers will have those 100 or 150 influencers listed out. And then probably if you feel like there's some out of those, you want to save for the next campaign or something, you could have that in saved influencer bit.
+------
+Navya Bhardwaj 34 minutes 54 seconds
+We're giving that feature now.
+------
+Navya Bhardwaj 34 minutes 57 seconds
+But that's still modular. If in case that does, you feel that doesn't make sense, so we can remove this from the side navigation.
+------
+Raj Kiran 35 minutes 4 seconds
+Yeah, yeah.
+------
+Navya Bhardwaj 35 minutes 13 seconds
+All right. So I think, yeah.
+------
+Raj Kiran 35 minutes 13 seconds
+OK.
+------
+Omkar Bargaje 35 minutes 14 seconds
+Also, I have one question here. In marketing strategy in key performance insight. Currently we when we have these pages category overview and all other pages.
+------
+Raj Kiran 35 minutes 22 seconds
+Yeah.
+------
+Navya Bhardwaj 35 minutes 23 seconds
+Yeah.
+------
+Raj Kiran 35 minutes 25 seconds
+Yeah.
+------
+Omkar Bargaje 35 minutes 31 seconds
+We are showing these tables and charts based on a few philtres, so will that be philtres present in this draggable component or in separate?
+------
+Navya Bhardwaj 35 minutes 42 seconds
+Yes. So can you see my screen? You see this toolbar here?
+------
+Omkar Bargaje 35 minutes 50 seconds
+Yeah.
+------
+Navya Bhardwaj 35 minutes 51 seconds
+This was the approach that we were thinking of that once we plan on adding the philtres, we'll have a toolbar coming in on the draggable component only. For example, just like this, and we could have some philtres. So this is the space that we are keeping for the philtres and information and justice make.
+------
+Navya Bhardwaj 36 minutes 10 seconds
+King it full width.
+------
+Omkar Bargaje 36 minutes 14 seconds
+OK.
+------
+Omkar Bargaje 36 minutes 17 seconds
+Oh.
+------
+Raj Kiran 36 minutes 18 seconds
+I'm just thinking, yeah, is bottom the right place to put Philtres isn't intuitively, it's somewhere on top.
+------
+Navya Bhardwaj 36 minutes 30 seconds
+So for philtres, usually it is, but this is a separate component that we are talking about right now. So if you see the page philtres, we have also kept on the right top because that's the most intuitive place to be. But this is a separate section that we are talking about. We have the summary here and we are giving them.
+------
+Raj Kiran 36 minutes 40 seconds
+Hmm.
+------
+Navya Bhardwaj 36 minutes 47 seconds
+So just the way we have it on YouTube, right where you could just click on the like things present for customization right below.
+------
+Navya Bhardwaj 36 minutes 57 seconds
+That's the approach that we are following. So they could, yeah.
+------
+Raj Kiran 36 minutes 58 seconds
+OK.
+------
+Raj Kiran 37 minutes
+Understood. I I think what Omkar is asking is for example, I don't know if you have a screen for for example there comparison. The second one, right, if you remember in when we had showcase the.
+------
+Raj Kiran 37 minutes 15 seconds
+Yeah, if you can. Yeah. The the top right, it's on the right.
+------
+Omkar Bargaje 37 minutes 15 seconds
+There.
+------
+Navya Bhardwaj 37 minutes 21 seconds
+OK.
+------
+Raj Kiran 37 minutes 22 seconds
+The first one on top. Yeah. So here for example, I I mentioned, right you could you could do this on multiple KPIs and so on. Is this what you're talking about, Omkar, that there are many different things you could order it and order it by and so on?
+------
+Omkar Bargaje 37 minutes 38 seconds
+Yeah, in you can see in brand Deep dive more clearly.
+------
+Raj Kiran 37 minutes 42 seconds
+Ah, OK, let's go to brand detail.
+------
+Omkar Bargaje 37 minutes 45 seconds
+Here, see there are few philtres and based on those philtres we are generating those charts so like that.
+------
+Raj Kiran 37 minutes 46 seconds
+Yeah.
+------
+Omkar Bargaje 37 minutes 56 seconds
+So how it will be?
+------
+Navya Bhardwaj 37 minutes 59 seconds
+We can share that screen with you. We can build that and share it with you, but our approach was similar. The way that I suggested that we'll have it all like this toolbar here like right on the like like right below here. So we could have the information and the full width everything.
+------
+Navya Bhardwaj 38 minutes 18 seconds
+Right in here, we can share that screen with you. We can create that one version maybe and we can share it with the key.
+------
+Omkar Bargaje 38 minutes 25 seconds
+Yeah, sure.
+------
+Raj Kiran 38 minutes 25 seconds
+Yeah, that'll. That'll be good to see. We can have a look, Omkar, if if he feel it should be up, then we can let them know. But that could be a way. Let's see.
+------
+Omkar Bargaje 38 minutes 34 seconds
+Yeah, sure.
+------
+Raj Kiran 38 minutes 34 seconds
+If it looks good.
+------
+Raj Kiran 38 minutes 44 seconds
+Yeah.
+------
+Navya Bhardwaj 38 minutes 44 seconds
+Anything else?
+------
+Omkar Bargaje 38 minutes 49 seconds
+No from myself.
+------
+Navya Bhardwaj 38 minutes 57 seconds
+Cool. Then I think we are mostly aligned with the team. We just wanted to discuss the features and the Dashboard 1 S that we are all on the same page, but I think there are some minor changes here and there. Otherwise we are good and we'll share these screens with you.
+------
+Navya Bhardwaj 39 minutes 14 seconds
+We were also planning that once we start take up the UI bit for this right, we'll have each of these like the tab screens created. We'll have the graphs and the tables created all for the UI. So you were also thinking we could take up these screens at that time, but we'll definitely share one with the.
+------
+Navya Bhardwaj 39 minutes 34 seconds
+Philtres and all of the toolbar thingy that we just discussed with you.
+------
+Omkar Bargaje 39 minutes 40 seconds
+OK, Raj, I have one more question now. We are so here in marketing currently we are Raj, we are referring to the spark one when user clicks clicked here budget planner.
+------
+Navya Bhardwaj 39 minutes 45 seconds
+Yeah.
+------
+Akshay Kumar 40 minutes 2 seconds
+Yes, omkar.
+------
+Omkar Bargaje 40 minutes 4 seconds
+OK, so so so.
+------
+Raj Kiran 40 minutes 7 seconds
+Sorry, omkar. What were you saying? Sorry, I, I I. Sorry I couldn't hear.
+------
+Omkar Bargaje 40 minutes 11 seconds
+Here in budget planner when user click on budget budget planner so our current spark tool will get open or this below component will get replaced by that.
+------
+Raj Kiran 40 minutes 17 seconds
+Yes.
+------
+Raj Kiran 40 minutes 19 seconds
+Play song.
+------
+Omkar Bargaje 40 minutes 26 seconds
+No, will.
+------
+Navya Bhardwaj 40 minutes 27 seconds
+Yeah. Yeah. So for that, we still have screens to create. We haven't gone on till budget planner right now. That's still a work in progress, but clicking on this will directly redirect the user to the budget planner only.
+------
+Omkar Bargaje 40 minutes 42 seconds
+OK, OK. So you are creating a separate page for a budget planner and you're showing order here only.
+------
+Navya Bhardwaj 40 minutes 44 seconds
+Yeah, to.
+------
+Navya Bhardwaj 40 minutes 47 seconds
+Yes.
+------
+Navya Bhardwaj 40 minutes 50 seconds
+Yeah, yeah.
+------
+Meha Sakhariya 40 minutes 51 seconds
+No. The budget planner, I think Raj has mentioned that we will nudge the user to go to the campaign bid, they can add more scenarios and plan the target and the budget over there. So that's the approach you guys were following. So we'll keep it same. We'll have two entry points over here to go.
+------
+Omkar Bargaje 41 minutes 8 seconds
+Do you want?
+------
+Meha Sakhariya 41 minutes 11 seconds
+To the campaign bit one could be you couldn't scheme through the past performance data and then plan your budget, or you can directly go create a new campaign and add multiple scenarios.
+------
+Omkar Bargaje 41 minutes 13 seconds
+OK.
+------
+Omkar Bargaje 41 minutes 23 seconds
+OK, OK.
+------
+Raj Kiran 41 minutes 26 seconds
+So I think it's still linking to that Ankur.
+------
+Omkar Bargaje 41 minutes 29 seconds
+Yeah, got it.
+------
+Raj Kiran 41 minutes 33 seconds
+But Naveb will the look and feel of that will change, right? The actual screen that we saw the optimizer screen.
+------
+Navya Bhardwaj 41 minutes 40 seconds
+Yeah. Yeah, so yes. So all of those. So this is just the dashboard wireframes that we are just sharing with you. We have started working on the other journeys, which include campaigns and probably influencer listing saved influencers.
+------
+Raj Kiran 41 minutes 48 seconds
+Got it.
+------
+Navya Bhardwaj 41 minutes 55 seconds
+Then budget and all of those. So those you'll see in a day or two. We had some questions and that's why we have this next call for to discuss those questions on. Yeah.
+------
+Raj Kiran 41 minutes 55 seconds
+Mm-hmm.
+------
+Raj Kiran 42 minutes 5 seconds
+Got it.
+------
+Raj Kiran 42 minutes 9 seconds
+Yeah.
+------
+Navya Bhardwaj 42 minutes 12 seconds
+Alright. I think then we are good. We'll share this version with you for sure. And then probably we can have this like the complete list of the tabs created once we kick start the UI.
+------
+Meha Sakhariya 42 minutes 27 seconds
+Also, team we wanted to discuss how do we want to go with the development plan.
+------
+Navya Bhardwaj 42 minutes 38 seconds
+Yeah. So basically we have created these 3 dashboard screens. Either we pick kick, start the UI for these three and you start developing right like simultaneously or do you want us to complete the complete design chunk, share it with you and then the.
+------
+Navya Bhardwaj 42 minutes 58 seconds
+Development is gonna start.
+------
+Shweta Mishra 43 minutes 3 seconds
+So I think a complete marketing effectiveness, you know the marketing strategy or design would help and and we can take a creative and influencer subsequently.
+------
+Meha Sakhariya 43 minutes 20 seconds
+OK, got it.
+------
+Shweta Mishra 43 minutes 21 seconds
+Yeah.
+------
+Raj Prasad 43 minutes 26 seconds
+Navya how many videos are going to be for the marketing strategy?
+------
+Navya Bhardwaj 43 minutes 34 seconds
+For marketing strategy, we have the dashboard. Then we have campaign. So we have campaign listing. Then in that we have scenario. So that's three pages.
+------
+Raj Prasad 43 minutes 48 seconds
+But Jim?
+------
+Navya Bhardwaj 43 minutes 50 seconds
+List of existing campaigns. We have it there itself and then we have scenario cards. So I think 4-5 pages for marketing strategy yeah. And user management will remain standard so.
+------
+Raj Prasad 43 minutes 58 seconds
+For.
+------
+Raj Prasad 44 minutes 4 seconds
+That's just stand alone, correct?
+------
+Navya Bhardwaj 44 minutes 7 seconds
+Yeah, so 4-5 pages will be there for marketing strategy.
+------
+Meha Sakhariya 44 minutes 14 seconds
+But also those pages will have specific tabs. If you see if you go on a campaign, they'll have three to four different tabs also inside that based on driver scenarios and all of those. So that will also include like maybe.
+------
+Raj Prasad 44 minutes 15 seconds
+And.
+------
+Raj Prasad 44 minutes 27 seconds
+Yeah.
+------
+Navya Bhardwaj 44 minutes 29 seconds
+OK.
+------
+Meha Sakhariya 44 minutes 32 seconds
+11:50 different types of screens you will see maybe the top content would be same but the below content would change.
+------
+Raj Prasad 44 minutes 40 seconds
+Fair, fair. And are we while designing, are we considering any framework like AG grid or motive frameworks in consideration for the CSS and everything?
+------
+Raj Prasad 44 minutes 54 seconds
+Or we are just making it a raw and using the raw feature to design the front end?
+------
+Navya Bhardwaj 45 minutes 2 seconds
+So from a design perspective, we are not using any format that you suggested. We're just going forward with like layouting and keeping the padding and all same.
+------
+Raj Prasad 45 minutes 8 seconds
+Hey, that's.
+------
+Navya Bhardwaj 45 minutes 16 seconds
+I think for development it it would be preferable if you could use Figma dev mode, so that'll help in picking up the right components and that'll save a lot of time.
+------
+Raj Prasad 45 minutes 16 seconds
+OK.
+------
+Raj Prasad 45 minutes 32 seconds
+Yeah. So figma. So anyhow, these all components will be shared in the figma layout only, correct?
+------
+Navya Bhardwaj 45 minutes 37 seconds
+Yeah.
+------
+Meha Sakhariya 45 minutes 38 seconds
+Yes.
+------
+Raj Prasad 45 minutes 39 seconds
+Yeah. OK.
+------
+Navya Bhardwaj 45 minutes 52 seconds
+Anything else may not that we're missing on.
+------
+Meha Sakhariya 45 minutes 55 seconds
+No, I think that's it. We've covered everything.
+------
+Navya Bhardwaj 46 minutes 2 seconds
+Alright, cool then. Thank you so much team for your time today. We will work on these minor changes and share the updated versions with you soon.
+------
+Raj Kiran 46 minutes 16 seconds
+Hello. Thank you.
+------
+Meha Sakhariya 46 minutes 17 seconds
+Thank you, team.
+------
+Akshay Kumar 46 minutes 19 seconds
+2.
+------
+Omkar Bargaje 46 minutes 20 seconds
+Thank you.
+------
+Raj Kiran 46 minutes 21 seconds
+Play song.
+------
+Brijesh Rajanna 46 minutes 21 seconds
+Thank you.
+------
+
+
+
+Shweta Mishra
+
+ stopped transcription
+------

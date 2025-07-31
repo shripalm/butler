@@ -1,9 +1,10 @@
 import requests
 # import sayTheThing from sharkSon.speakerMan
-from sharkSon.speakerMan import sayTheThing
+from speakerMan import sayTheThing
+from entry import save_text
 
 
-with open("money game/transcript.txt", "r") as f:
+with open("../transcripts/dentsu-spark-multi-tenancy.txt", "r") as f:
     transcript = f.read()
 
 # STEP 2: Generate MoM + ToDos + Participants with Ollama local LLM
@@ -68,5 +69,6 @@ class GeminiClient:
 # Example usage:
 client = GeminiClient("AIzaSyAW3bf6TFoHUjXQoaUMubn1y3dyLejhgZA")
 op = client.chat(prompt)
-sayTheThing(op)
+# sayTheThing(op)
+save_text(op, '../mom/dentsu-spark-multi-tenancy.md')
 print(client.list_models())
