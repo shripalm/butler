@@ -17,11 +17,45 @@ class VideoGenerator:
         # Default background video path from home directory
         self.bg_video_path = os.path.expanduser('~/projects/butler/butler-core/bgvids/video720.mp4')
 
-    def create_tts(self, text, output_path='temp_audio.mp3'):
-        """Convert text to speech"""
-        tts = gTTS(text=text, lang='en')
-        tts.save(output_path)
-        return output_path
+    def create_tts(self, text, output_path='temp_audio.mp3', speed=1.25, slow=False):
+        """Convert text to speech and optionally apply pitch-preserving speed-up (default 1.25x)."""
+        import tempfile
+        tts = gTTS(text=text, lang='en', slow=slow)
+        # If speed is 1.0, write directly to output
+        if abs(speed - 1.0) < 1e-6:
+            tts.save(output_path)
+            return output_path
+        # Otherwise write to a temp file, then speed up into output_path
+        fd, temp_path = tempfile.mkstemp(suffix='.mp3')
+        os.close(fd)
+        try:
+            tts.save(temp_path)
+            try:
+                self.speed_up_audio_ffmpeg(temp_path, output_path, factor=speed)
+                return output_path
+            except Exception as e:
+                # Fallback to librosa time-stretch -> wav -> mp3
+                print(f"FFmpeg atempo failed for TTS speed-up ({e}). Falling back to librosa.")
+                tmp_wav = output_path + '.wav'
+                self.time_stretch_audio(temp_path, tmp_wav, rate=speed)
+                try:
+                    import subprocess
+                    subprocess.run([
+                        'ffmpeg', '-y', '-i', tmp_wav, '-vn', '-codec:a', 'libmp3lame', output_path
+                    ], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                finally:
+                    try:
+                        if os.path.exists(tmp_wav):
+                            os.remove(tmp_wav)
+                    except Exception:
+                        pass
+                return output_path
+        finally:
+            try:
+                if os.path.exists(temp_path):
+                    os.remove(temp_path)
+            except Exception:
+                pass
 
     def create_text_clip(self, text, duration, start_time=0):
         """Create a text clip with the specified duration"""
@@ -81,13 +115,67 @@ class VideoGenerator:
         # Ensure minimum duration for very short chunks
         return max(duration, 1.0)
 
-    def create_video(self, text, output_path='output.mp4'):
-        """Create a video from the given text with synchronized chunks"""
-        # Create audio
-        audio_path = self.create_tts(text)
+    def time_stretch_audio(self, input_path, output_path, rate=1.25):
+        """Time-stretch audio using librosa to preserve pitch and tone"""
+        import librosa
+        import soundfile as sf
+        y, sr = librosa.load(input_path, sr=None)
+        y_stretched = librosa.effects.time_stretch(y, rate=rate)
+        sf.write(output_path, y_stretched, sr)
+        return output_path
+
+    def speed_up_audio_ffmpeg(self, input_path, output_path, factor=1.25):
+        """Use FFmpeg atempo filter to speed audio without changing pitch."""
+        import subprocess
+        # FFmpeg atempo supports 0.5-2.0 per filter; chain if outside.
+        filters = []
+        remaining = factor
+        while remaining > 2.0:
+            filters.append("atempo=2.0")
+            remaining /= 2.0
+        while remaining < 0.5 and remaining > 0:
+            filters.append("atempo=0.5")
+            remaining /= 0.5
+        filters.append(f"atempo={remaining}")
+        atempo_chain = ",".join(filters)
+        cmd = [
+            "ffmpeg", "-y",
+            "-i", input_path,
+            "-vn",
+            "-filter:a", atempo_chain,
+            output_path,
+        ]
+        subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        return output_path
+
+    def create_video(self, text, project_name):
+        """Create a video using the given text.
+
+        Stores artifacts in a new folder: outputs/<project_name>/
+        - <project_name>.mp3  (speech, 1.25x, pitch-preserving)
+        - <project_name>.mp4  (final video)
+        - <project_name>.txt  (script)
+        Returns the output directory path.
+        """
+        # Prepare output directory
+        base_dir = os.path.join(os.path.dirname(__file__), 'outputs', project_name)
+        os.makedirs(base_dir, exist_ok=True)
+
+        # Define artifact paths
+        audio_path = os.path.join(base_dir, f"{project_name}.mp3")
+        video_path = os.path.join(base_dir, f"{project_name}.mp4")
+        script_path = os.path.join(base_dir, f"{project_name}.txt")
+
+        # Save script
+        try:
+            with open(script_path, 'w', encoding='utf-8') as f:
+                f.write(text)
+        except Exception as e:
+            print(f"Warning: Failed to write script file: {e}")
+
+        # Create audio using TTS with default 1.25x speed (pitch-preserving)
+        audio_path = self.create_tts(text, output_path=audio_path, speed=1.25, slow=False)
         audio_clip = AudioFileClip(audio_path)
-        # Speed up the audio using MoviePy's with_speed_scaled
-        audio_clip = audio_clip.with_speed_scaled(factor=1.25)
         total_duration = audio_clip.duration
 
         # Create background from video if available
@@ -160,21 +248,28 @@ class VideoGenerator:
 
         # Write video file with optimized settings
         final_clip.write_videofile(
-            output_path,
+            video_path,
             fps=60,
             codec='libx264',
             audio_codec='aac',
         )
 
         # Clean up
-        audio_clip.close()
-        final_clip.close()
-        os.remove(audio_path)
+        try:
+            audio_clip.close()
+        finally:
+            try:
+                final_clip.close()
+            finally:
+                # Keep the final audio and script; temp files are removed in create_tts
+                pass
 
-        return output_path
+        return base_dir
+
+    # ...existing code...
 
 # Example usage
 if __name__ == "__main__":
     generator = VideoGenerator()
     text = "This is a test video for YouTube Shorts. The text will be synchronized with the voiceover."
-    generator.create_video(text, "output.mp4")
+    generator.create_video(text, "test-project")

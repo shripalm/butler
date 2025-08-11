@@ -21,3 +21,4 @@ venv
 *.pdf
 *.webm
 *.mp3
+/butler-core/outputs/*/*.txt
